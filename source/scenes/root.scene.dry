@@ -101,6 +101,7 @@ Q.moderate_plan_adopted = 0;
 // organizations
 
 // inter-party relations
+Q.csrpd_relation = 62;
 Q.z_relation = 50;
 Q.kpd_relation = 25;
 Q.ddp_relation = 60;
@@ -235,6 +236,7 @@ Q.sapd_formed = 0;
 
 // Support for party by social group
 // they don't have to sum to 100 since the electoral calculations will be normalized.
+Q.workers_csrpd = 12;
 Q.workers_spd = 60;
 Q.workers_kpd = 20;
 Q.workers_z = 5;
@@ -244,6 +246,7 @@ Q.workers_dnvp = 5;
 Q.workers_nsdap = 0;
 Q.workers_other = 10;
 
+Q.old_middle_csrpd = 7;
 Q.old_middle_spd = 5;
 Q.old_middle_kpd = 0;
 Q.old_middle_z = 5;
@@ -253,6 +256,7 @@ Q.old_middle_dnvp = 25;
 Q.old_middle_nsdap = 10;
 Q.old_middle_other = 10;
 
+Q.new_middle_csrpd = 8;
 Q.new_middle_spd = 5;
 Q.new_middle_kpd = 1;
 Q.new_middle_z = 10;
@@ -262,6 +266,7 @@ Q.new_middle_dnvp = 10;
 Q.new_middle_nsdap = 5;
 Q.new_middle_other = 15;
 
+Q.rural_csrpd = 12;
 Q.rural_spd = 10;
 Q.rural_kpd = 0;
 Q.rural_z = 5;
@@ -271,8 +276,9 @@ Q.rural_dnvp = 45;
 Q.rural_nsdap = 5;
 Q.rural_other = 10;
 
-Q.unemployed_spd = 25;
-Q.unemployed_kpd = 55;
+Q.unemployed_csrpd = 12;
+Q.unemployed_spd = 20;
+Q.unemployed_kpd = 50;
 Q.unemployed_z = 1;
 Q.unemployed_ddp = 0;
 Q.unemployed_dvp = 0;
@@ -280,9 +286,10 @@ Q.unemployed_dnvp = 5;
 Q.unemployed_nsdap = 15;
 Q.unemployed_other = 9;
 
-Q.catholics_spd = 15;
-Q.catholics_kpd = 2;
-Q.catholics_z = 50;
+Q.catholics_csrpd = 15;
+Q.catholics_spd = 8;
+Q.catholics_kpd = 1;
+Q.catholics_z = 48;
 Q.catholics_ddp = 0;
 Q.catholics_dvp = 5;
 Q.catholics_dnvp = 5;
@@ -342,9 +349,10 @@ Q.dvp_in_government = 1;
 Q.dnvp_in_government = 1;
 Q.kpd_in_government = 0;
 Q.nsdap_in_government = 0;
+Q.csrpd_in_government = 0:
 
 Q.in_right_coalition = 0;
-// Weimar coalition = SPD + Z + DDP
+// Weimar coalition = SPD + Z + DDP 
 Q.in_weimar_coalition = 0;
 // Grand coalition = SPD + Z + BVP + DDP + DVP
 // also includes the "new grand coalition" of SPD + Z + BVP + DDP + DVP + Others
@@ -629,6 +637,6 @@ go-to: main if difficulty >= 0; main.main_easy if difficulty < 0
 
 It is a bright time for German democracy. After a period of struggle, inflation is finally under control, and the economy is expanding steadily. In foreign policy, we have reached agreements with the Western powers and the Soviet Union that might make genuine peace a reality. 
 
-Now, the task of Social Democracy is to prepare for the next election. The bourgeois-right government of Wilhelm Marx is unpopular, and we stand to gain. Perhaps the next government will have a socialist majority.
+Now, the task of Social Democracy is to prepare for the next election. The bourgeois-right government of Wilhelm Marx is unpopular, and we stand to gain. Perhaps the next government will have a Moderate socialist majority.
 
 
