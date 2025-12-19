@@ -1,0 +1,34 @@
+title: A Union with our Christian-Social Brethren?
+new-page: true 
+subtitle: The CSRPD and the SPD have grown very close and a union is likely.
+tags: event
+max-visits: 1
+view-if: Q.csrpd_relation >= 80 and ((Q.csrpd_coalition = 1 and Q.spd_coalition = 1) or (Q.csrpd_coalition = 0 and Q.spd_coalition = 0))
+
+- @Unity above all
+- @The SPD will remain a worker's party
+
+@Unity above all
+on-arrival:
+  Q.csrpd_exist = 0;
+  Q.workers_spd += Q.workers_csrpd;
+  Q.workers_csrpd = 0;
+  Q.new_middle_spd += Q.new_middle_csrpd;
+  Q.new_middle_csrpd = 0;
+  Q.old_middle_spd += Q.old_middle_csrpd;
+  Q.old_middle_csrpd = 0;
+  Q.rural_spd += Q.rural_csrpd;
+  Q.rural_csrpd = 0;
+  Q.unemployed_spd += Q.unemployed_csrpd;
+  Q.unemployed_csrpd = 0;
+  Q.catholics_spd += Q.catholics_csrpd;
+  Q.catholics_csrpd = 0;
+  peoples_party_support += 3;
+  Q.z_relation -= 5;
+
+@The SPD will remain a worker's party
+subtitle: This will anger the CSRPD
+on-arrival:
+  Q.csrpd_relation -= 15;
+  peoples_party_support -= 3;
+  Q.z_relation += 10;
