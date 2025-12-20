@@ -665,15 +665,15 @@ view-if: social_christian_coalition >= 50 and ddp_relation <= 30 and z_relation 
 
 A Social-Christian Coalition has become possible because of the anti-social ideas of the DDP and the left flank's growth in Zentrum
 
-- @social_christian_coalition_2
+- @social_christian_coalition_3
 - @reject_the_social_christian_coalition: No, We reject this offer.
 
-@reject_the_social_christian_coalition
+- @reject_the_social_christian_coalition
 on-arrival: z_relation -5 and csrpd_relation -10 and Q.catholics_spd -=5
 
 - @social_christian_coalition_3
-- title: Accept this Social offer!
-- on-arrival: chancellor = "Wirth" chancellor_party = "CSRPD" spd_in_government = 1 leverage = 40; z_in_government = 1 csrpd_in_government = 1 csrpd_relation += 8
+ title: Accept this Social offer!
+ on-arrival: chancellor = "Wirth" chancellor_party = "CSRPD" spd_in_government = 1; leverage = 40; z_in_government = 1; csrpd_in_government = 1; csrpd_relation += 8;
 
 
 @unity_government
