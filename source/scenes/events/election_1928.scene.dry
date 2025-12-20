@@ -669,7 +669,10 @@ A Social-Christian Coalition has become possible because of the anti-social idea
 - @reject_the_social_christian_coalition: No, We reject this offer.
 
 - @reject_the_social_christian_coalition
-on-arrival: z_relation -5 and csrpd_relation -10 and Q.catholics_spd -=5
+on-arrival:
+  z_relation -= 5
+  csrpd_relation -= 10
+  Q.catholics_spd -= 5
 
 - @social_christian_coalition_3
  title: Accept this Social offer!
