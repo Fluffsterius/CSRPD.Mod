@@ -27,6 +27,7 @@ on-arrival:
   Q.z_relation -= 5;
 
 @The SPD will remain a worker's party
+title: The SPD will remain a worker's party
 subtitle: This will anger the CSRPD
 on-arrival:
   Q.csrpd_relation -= 15;
