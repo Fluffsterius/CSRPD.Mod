@@ -218,7 +218,7 @@ data = data.concat([
         "id": "csrpd",
     "legend": "CSRPD",
     "name": "CSRPD",
-    "seats": Math.round(Q.csrpd_r * 5)
+    "seats": Math.round(Q.csrpd_r*5)
     },
     {
         "id": "z",
@@ -494,7 +494,7 @@ Who should be chancellor?
 @wirth_chancellor_new
 subtitle: This will reduce our leverage in the ministries.
 view-if: not historical_mode or not spd_prussia
-on-arrival: leverage -= 5; chancellor = "<span style="color: #FF6B21;">**Wirth**</span>"; chancellor_party = "CSRPD"
+on-arrival: leverage -= 5; chancellor = "Wirth"; chancellor_party = "CSRPD"
 go-to: ministries
 
 We have assembled a new coalition under joseph Wirth.
@@ -1028,7 +1028,7 @@ This is highly unexpected, and many in the left and center of our party are crit
 title: Let Joseph Wirth of the Center Party be chancellor.
 view-if: z_relation >= 60
 subtitle: Wirth is our party chairman and having him as chancellor would give us more sway.
-on-arrival: left_dissent += 2; z_relation += 6; ddp_relation += 3; kpd_relation -= 5; in_grand_coalition = 1 if in_weimar_coalition == 0; chancellor = "Wirth"; chancellor_party = "Z"; spd_in_government = 1; leverage += 5
+on-arrival: left_dissent += 2; z_relation += 6; ddp_relation += 3; kpd_relation -= 5; in_grand_coalition = 1 if in_weimar_coalition == 0; chancellor = "Wirth"; chancellor_party = "CSRPD"; spd_in_government = 1; leverage += 5
 go-to: ministries
 
 
