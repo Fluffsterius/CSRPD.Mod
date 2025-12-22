@@ -676,7 +676,7 @@ The Center Party is pleased, and somewhat surprised, that we have appointed [+ c
 
 @wirth_emergency_chancellor
 view-if: z_party_leader == "Joos"
-on-arrival: chancellor = "Wirth"; chancellor_party = "Z"; spd_in_government = 1; z_relation += 10; foreign_minister_party = "SPD"; interior_minister_party = "SPD"; justice_minister_party = "SPD"; labor_minister_party = "SPD"; reichswehr_minister_party = "SPD"; economic_minister_party = "SPD"; finance_minister_party = "SPD"; agriculture_minister_party = "SPD" 
+on-arrival: chancellor = "Wirth"; chancellor_party = "Z"; spd_in_government = 1; z_relation += 10; 
 
 The Center Party is pleased that we have appointed [+ chancellor +] as chancellor.
 
@@ -1026,8 +1026,8 @@ This is highly unexpected, and many in the left and center of our party are crit
 
 @z_chancellor_wirth
 title: Let Joseph Wirth of the Center Party be chancellor.
-view-if: z_party_leader == "Joos"
-subtitle: Wirth is on the left wing of the Center Party. This may give us a better position in negotiating for other cabinet positions.
+view-if: z_relation >= 60
+subtitle: Wirth is our party chairman and having him as chancellor would give us more sway.
 on-arrival: left_dissent += 2; z_relation += 6; ddp_relation += 3; kpd_relation -= 5; in_grand_coalition = 1 if in_weimar_coalition == 0; chancellor = "Wirth"; chancellor_party = "Z"; spd_in_government = 1; leverage += 5
 go-to: ministries
 
@@ -1037,7 +1037,7 @@ go-to: ministries
 @no_govt
 title: We do not form the government.
 subtitle: This will cause significant internal dissent, and will lead to increased distrust from the bourgeois parties.
-on-arrival: reformist_dissent += 5; center_dissent += 5; labor_dissent += 5; neorevisionist_dissent += 5
+on-arrival: agrarian_dissent += 15; left_catholic_dissent += 10
 
 Are we sure about not participating in government? This will cause significant internal dissent, and will lead to increased distrust from the bourgeois parties. Even debating this option causes internal backlash. In addition, it is possible that the bourgeois and right-wing parties will also be unable to form a coalition government, leading to a regime appointed by President [+ president +].
 
