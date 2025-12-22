@@ -534,7 +534,7 @@ Our rejection of the unity government has hurt our relations with the SPD,Zentru
 view-if: z_relation >= 50 and spd_relation >= 60
 choose-if: president == "Braun" or president == "Wirth"
 unavailable-subtitle: President Hindenburg will not support a minority government led by Joseph Wirth.
-on-arrival: chancellor = "Wirth"; chancellor_party = "CSRPD; spd_in_government = 0; csrpd_in_government = 1; spd_toleration = 1; z_relation += 5; leverage = 25; spd_relation -= 25;
+on-arrival: chancellor = "Wirth"; chancellor_party = "CSRPD"; spd_in_government = 0; csrpd_in_government = 1; spd_toleration = 1; z_relation += 5; leverage = 25; spd_relation -= 25;
 
 We have formed a minority government led by Joseph Wirth, saviour of the Republic!
 
