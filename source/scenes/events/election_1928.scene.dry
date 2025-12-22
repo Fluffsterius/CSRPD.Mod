@@ -216,8 +216,8 @@ data = data.concat([
     },
     {
         "id": "csrpd",
-        "legend": "<span style="color: #FF6B21;">**CSRPD**</span>",
-        "name": "<span style="color: #FF6B21;">**CSRPD**</span>",
+        "legend": "CSRPD,
+        "name": "CSRPD,
         "seats": Math.round(Q.csrpd_r*5),
     },
     {
@@ -678,7 +678,7 @@ The Center Party leader, Joseph Joos, clearly sees the threat from the ascension
 
 @unity_government_2
 title: Accept the offer!
-on-arrival: chancellor = "Wirth"; chancellor_party = "<span style="color: #FF6B21;">**CSRPD**</span>"; spd_in_government = 1; csrpd_in_government = 1; in_grand_coalition = 1; in_unity_government = 1; leverage = 15; z_relation += 5; dvp_relation += 4
+on-arrival: chancellor = "Wirth"; chancellor_party = "CSRPD; spd_in_government = 1; csrpd_in_government = 1; in_grand_coalition = 1; in_unity_government = 1; leverage = 15; z_relation += 5; dvp_relation += 4
 achievement: constitutional_coalition
 go-to: ministries
 
@@ -700,7 +700,7 @@ Our rejection of the unity government has hurt our relations with the bourgeois 
 view-if: z_party_leader = "Joos"
 choose-if: president == "Braun"
 unavailable-subtitle: President Hindenburg will not support a minority government led by Joseph Wirth.
-on-arrival: chancellor = "Wirth"; chancellor_party = "<span style="color: #FF6B21;">**CSRPD**</span>"; spd_in_government = 0; csrpd_in_government = 1; spd_toleration = 1; z_relation += 5; foreign_minister_party = "DVP"; interior_minister_party = "Z"; justice_minister_party = "I"; labor_minister_party = "Z"; reichswehr_minister_party = "I"; economic_minister_party = ddp_name; finance_minister_party = "DVP"; agriculture_minister_party = "Z"; pro_republic -= 2;
+on-arrival: chancellor = "Wirth"; chancellor_party = "CSRPD; spd_in_government = 0; csrpd_in_government = 1; spd_toleration = 1; z_relation += 5; foreign_minister_party = "DVP"; interior_minister_party = "Z"; justice_minister_party = "I"; labor_minister_party = "Z"; reichswehr_minister_party = "I"; economic_minister_party = ddp_name; finance_minister_party = "DVP"; agriculture_minister_party = "Z"; pro_republic -= 2;
 
 We have supported a minority government led by the Center Party under Chancellor Joseph Wirth.
 
