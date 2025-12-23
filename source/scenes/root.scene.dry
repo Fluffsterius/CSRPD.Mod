@@ -232,25 +232,25 @@ Q.sapd_formed = 0;
 
 // Support for party by social group
 // they don't have to sum to 100 since the electoral calculations will be normalized.
-Q.workers_csrpd = 10;
+Q.workers_csrpd = 7;
 Q.workers_spd = 52;
 Q.workers_kpd = 18;
-Q.workers_z = 2;
+Q.workers_z = 3;
 Q.workers_ddp = 0;
 Q.workers_dvp = 0;
 Q.workers_dnvp = 2;
 Q.workers_nsdap = 0;
-Q.workers_other = 10;
+Q.workers_other = 7;
 
 Q.old_middle_csrpd = 2;
 Q.old_middle_spd = 4;
 Q.old_middle_kpd = 0;
-Q.old_middle_z = 4;
+Q.old_middle_z = 6;
 Q.old_middle_ddp= 10;
 Q.old_middle_dvp = 25;
 Q.old_middle_dnvp = 25;
 Q.old_middle_nsdap = 10;
-Q.old_middle_other = 10;
+Q.old_middle_other = 7;
 
 Q.new_middle_csrpd = 4;
 Q.new_middle_spd = 3;
@@ -270,9 +270,9 @@ Q.rural_ddp= 5;
 Q.rural_dvp = 15;
 Q.rural_dnvp = 35;
 Q.rural_nsdap = 5;
-Q.rural_other = 10;
+Q.rural_other = 7;
 
-Q.unemployed_csrpd = 7;
+Q.unemployed_csrpd = 5;
 Q.unemployed_spd = 23;
 Q.unemployed_kpd = 40;
 Q.unemployed_z = 1;
@@ -282,15 +282,15 @@ Q.unemployed_dnvp = 5;
 Q.unemployed_nsdap = 15;
 Q.unemployed_other = 9;
 
-Q.catholics_csrpd = 19;
+Q.catholics_csrpd = 22;
 Q.catholics_spd = 1;
 Q.catholics_kpd = 1;
-Q.catholics_z = 35;
+Q.catholics_z = 41;
 Q.catholics_ddp = 0;
 Q.catholics_dvp = 5;
 Q.catholics_dnvp = 5;
 Q.catholics_nsdap = 0;
-Q.catholics_other = 12;
+Q.catholics_other = 5;
 
 
 // Current Reichstag composition
