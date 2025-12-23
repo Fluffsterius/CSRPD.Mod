@@ -202,6 +202,7 @@ if (Q.sapd_formed && Q.sapd_r) {
             });
 }
     {
+      data = data.concat([
         "id": "spd",
         "legend": "SPD",
         "name": "SPD",
@@ -214,7 +215,6 @@ if (Q.sapd_formed && Q.sapd_r) {
         "seats": Math.round(Q.ddp_r*5),
   },
  {
-      data = data.concat([
         "id": "csrpd",
     "legend": "CSRPD",
     "name": "CSRPD",
