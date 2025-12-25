@@ -98,7 +98,7 @@ Q.moderate_plan_adopted = 0;
 
 // inter-party relations
 Q.spd_relation = 60;
-Q.z_relation = 75;
+Q.cvp_relation = 75;
 Q.kpd_relation = 30;
 Q.ddp_relation = 60;
 Q.dvp_relation = 45;
@@ -109,9 +109,9 @@ Q.NSDAP_relation = 0;
 Q.kpd_leader = "Thälmann";
 // alternative is the Conciliators as party leader
 Q.kpd_party_leader = "Thälmann";
-Q.z_leader = "Brüning";
+Q.cvp_leader = "Brüning";
 // party leader - can be Ludwig Kaas, Joseph Joos, or Adam Stegerwald after the 1928 December conference. Joos will be most friendly to the SPD.
-Q.z_party_leader = "Marx";
+Q.cvp_party_leader = "Marx";
 Q.nsdap_leader = "Hitler";
 
 // hmm... maybe we can play nice with Hindenburg???
@@ -235,7 +235,7 @@ Q.sapd_formed = 0;
 Q.workers_csrpd = 7;
 Q.workers_spd = 52;
 Q.workers_kpd = 18;
-Q.workers_z = 3;
+Q.workers_cvp = 3;
 Q.workers_ddp = 0;
 Q.workers_dvp = 0;
 Q.workers_dnvp = 2;
@@ -245,7 +245,7 @@ Q.workers_other = 7;
 Q.old_middle_csrpd = 2;
 Q.old_middle_spd = 4;
 Q.old_middle_kpd = 0;
-Q.old_middle_z = 6;
+Q.old_middle_cvp = 6;
 Q.old_middle_ddp= 10;
 Q.old_middle_dvp = 25;
 Q.old_middle_dnvp = 25;
@@ -255,7 +255,7 @@ Q.old_middle_other = 7;
 Q.new_middle_csrpd = 4;
 Q.new_middle_spd = 3;
 Q.new_middle_kpd = 1;
-Q.new_middle_z = 6;
+Q.new_middle_cvp = 6;
 Q.new_middle_ddp= 29;
 Q.new_middle_dvp = 22;
 Q.new_middle_dnvp = 10;
@@ -265,7 +265,7 @@ Q.new_middle_other = 15;
 Q.rural_csrpd = 10;
 Q.rural_spd = 3;
 Q.rural_kpd = 0;
-Q.rural_z = 2;
+Q.rural_cvp = 2;
 Q.rural_ddp= 5;
 Q.rural_dvp = 15;
 Q.rural_dnvp = 35;
@@ -275,7 +275,7 @@ Q.rural_other = 7;
 Q.unemployed_csrpd = 5;
 Q.unemployed_spd = 23;
 Q.unemployed_kpd = 40;
-Q.unemployed_z = 1;
+Q.unemployed_cvp = 1;
 Q.unemployed_ddp = 0;
 Q.unemployed_dvp = 0;
 Q.unemployed_dnvp = 5;
@@ -285,7 +285,7 @@ Q.unemployed_other = 9;
 Q.catholics_csrpd = 22;
 Q.catholics_spd = 1;
 Q.catholics_kpd = 1;
-Q.catholics_z = 41;
+Q.catholics_cvp = 41;
 Q.catholics_ddp = 0;
 Q.catholics_dvp = 5;
 Q.catholics_dnvp = 5;
@@ -296,13 +296,13 @@ Q.catholics_other = 5;
 // Current Reichstag composition
 // % of Reichstag in Jan 1928
 // source: wikipedia
-// note: the Z figures also include the BVP (Bavarian people's party)
+// note: the CVP figures also include the BVP (Bavarian people's party)
 // since they were ideologically similar, but they were separate parties.
 // They did not have a CDU/CSU-style relationship.
 Q.spd_r = 26;
 Q.kpd_r = 9;
 Q.csrpd_r = 0;
-Q.z_r = 17;
+Q.cvp_r = 17;
 Q.ddp_r = 6;
 Q.dvp_r = 10;
 Q.dnvp_r = 20;
@@ -313,7 +313,7 @@ Q.other_r = 9;
 Q.old_spd_r = 26;
 Q.old_kpd_r = 9;
 Q.old_csrpd_r = 0;
-Q.old_z_r = 17;
+Q.old_cvp_r = 17;
 Q.old_ddp_r = 6;
 Q.old_dvp_r = 10;
 Q.old_dnvp_r = 20;
@@ -339,9 +339,9 @@ Q.economic_records = [];
 Q.president = "Hindenburg";
 // starting chancellor: Wilhelm Marx
 Q.chancellor = "Marx";
-Q.chancellor_party = 'Z';
+Q.chancellor_party = 'CVP';
 Q.spd_in_government = 0;
-Q.z_in_government = 1;
+Q.cvp_in_government = 1;
 Q.ddp_in_government = 0;
 Q.dvp_in_government = 1;
 Q.dnvp_in_government = 1;
@@ -350,12 +350,12 @@ Q.nsdap_in_government = 0;
 Q.csrpd_in_government = 0;
 
 Q.in_right_coalition = 0;
-// Weimar coalition = SPD + Z + DDP 
+// Weimar coalition = SPD + CVP + DDP 
 Q.in_weimar_coalition = 0;
-// Grand coalition = SPD + Z + BVP + DDP + DVP
-// also includes the "new grand coalition" of SPD + Z + BVP + DDP + DVP + Others
+// Grand coalition = SPD + CVP + BVP + DDP + DVP
+// also includes the "new grand coalition" of SPD + CVP + BVP + DDP + DVP + Others
 Q.in_grand_coalition = 0;
-// Popular front = SPD + KPD + Z + DDP
+// Popular front = SPD + KPD + CVP + DDP
 Q.in_popular_front = 0;
 // left coalition = SPD + KPD + left-splinters
 Q.in_left_front = 0;
@@ -388,13 +388,13 @@ Q.interior_minister_party = 'DNVP';
 Q.justice_minister = 'Hergt';
 Q.justice_minister_party = 'DNVP';
 Q.labor_minister = 'Brauns';
-Q.labor_minister_party = 'Z';
+Q.labor_minister_party = 'CVP';
 Q.reichswehr_minister = 'Groener';
 Q.reichswehr_minister_party = 'I';
 Q.economic_minister = 'Curtius';
 Q.economic_minister_party = 'DVP';
 Q.finance_minister = 'Köhler';
-Q.finance_minister_party = 'Z';
+Q.finance_minister_party = 'CVP';
 Q.agriculture_minister = 'Schiele';
 Q.agriculture_minister_party = 'DNVP';
 
@@ -618,7 +618,7 @@ Q.reformist_dissent = 25;
 Q.left_dissent = 30;
 Q.labor_dissent = 25;
 Q.center_dissent = 25;
-Q.z_relation = 41;
+Q.cvp_relation = 41;
 Q.kpd_relation = 16;
 Q.dvp_relation = 31;
 Q.budget = 2;
@@ -627,7 +627,7 @@ this.state.disableSaves = true;
 go-to: 1928_main
 
 @1928_main
-audio: shuffle music/1928_1930/FruhlingsliedMendelssohn.mp3 music/1928_1930/AUF_HOHEN_BERGEN_noise_reduced.mp3 music/1928_1930/MarekWeber.mp3 music/1928_1930/BAUERNKAPELLE.mp3 music/1928_1933/DERLINDENBAUM_normalized.mp3 music/1928_1933/ZurSonne_zurFreiheit.mp3 music/1928_1933/arbeiter_marseille.mp3 music/1928_1933/Wann_wir_schreiten_Seit_an_Seit.mp3 music/1930_1933/Internationale-de_normalized.ogg music/1928_1930/LiedDerPompadour.mp3 music/1928_1933/SozialistenMarsch.mp3
+audio: shuffle music/1928_1930/FruhlingsliedMendelssohn.mp3 music/1928_1930/AUF_HOHEN_BERGEN_noise_reduced.mp3 music/1928_1930/MarekWeber.mp3 music/1928_1930/BAUERNKAPELLE.mp3 music/1928_1933/DERLINDENBAUM_normalized.mp3 music/1928_1933/ZurSonne_cvpurFreiheit.mp3 music/1928_1933/arbeiter_marseille.mp3 music/1928_1933/Wann_wir_schreiten_Seit_an_Seit.mp3 music/1930_1933/Internationale-de_normalized.ogg music/1928_1930/LiedDerPompadour.mp3 music/1928_1933/SozialistenMarsch.mp3
 new-page: true
 go-to: main if difficulty >= 0; main.main_easy if difficulty < 0
 
